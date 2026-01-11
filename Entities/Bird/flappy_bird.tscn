@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://rruokk4aty3f"]
+
+[ext_resource type="Script" uid="uid://22j5hugk6j4k" path="res://Entities/Bird/flappy_bird_physics.gd" id="1_3u5xm"]
+[ext_resource type="Texture2D" uid="uid://bfvw37wke08l7" path="res://Sprites/icon.svg" id="1_iwx5f"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3u5xm"]
+radius = 63.07139
+
+[node name="Flappy Bird" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_3u5xm")
+angle = -89
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("1_iwx5f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CircleShape2D_3u5xm")

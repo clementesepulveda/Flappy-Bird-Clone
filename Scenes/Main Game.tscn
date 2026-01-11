@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnk31adf2ek23"]
+
+[ext_resource type="PackedScene" uid="uid://rruokk4aty3f" path="res://Entities/Bird/flappy_bird.tscn" id="1_7tgyf"]
+
+[node name="MainGame" type="Node2D"]
+
+[node name="Flappy Bird" parent="." instance=ExtResource("1_7tgyf")]
+position = Vector2(-3, -2)
+
+[node name="Camera2D" type="Camera2D" parent="."]
